@@ -1,6 +1,6 @@
 script='<script src="/js/ads.js"></script>'
 
-for f in index.php detail_post.php result_lengkap.php detail.php; do
+for f in *.php; do
   grep -Fq "$script" "$f" && continue
 
   if grep -qi '</body>' "$f"; then
