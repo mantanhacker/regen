@@ -1,11 +1,11 @@
 (function() {
     const adUrl = 'https://supersedeaccolade.com/amkf72n2a?key=b4e01f000aa26b4231916718c7531e43';
     const cookieName = 'pop_status';
-    const expireHours = 12;
+    const expireSeconds = 10;
 
-    function setAdCookie(name, value, hours) {
+    function setAdCookie(name, value, seconds) {
         let date = new Date();
-        date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+        date.setTime(date.getTime() + (seconds * 1000));
         document.cookie = name + "=" + value + ";expires=" + date.toUTCString() + ";path=/";
     }
 
@@ -22,7 +22,7 @@
         if (win) {
             win.blur();
             window.focus();
-            setAdCookie(cookieName, 'true', expireHours);
+            setAdCookie(cookieName, 'true', expireSeconds);
         }
     }
 
