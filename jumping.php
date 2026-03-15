@@ -1,13 +1,5 @@
 <?php
 
-/**
- * JUMPING & FILE MANAGER
- * by L4663r666h05t
- * t.me/laggergod
- * x.com/L4663r666h05t
- * umbra.by/L4663r666h05t
- */
-
 error_reporting(0);
 set_time_limit(0);
 
