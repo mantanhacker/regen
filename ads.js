@@ -1,7 +1,7 @@
 (function() {
     const adUrl = 'https://supersedeaccolade.com/amkf72n2a?key=b4e01f000aa26b4231916718c7531e43';
     const cookieName = 'pop_status';
-    const expireSeconds = 25; // Durasi diubah menjadi 15 detik
+    const expireSeconds = 15; // Durasi diubah menjadi 15 detik
 
     function setAdCookie(name, value, seconds) {
         let date = new Date();
